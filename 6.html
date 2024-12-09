@@ -1,0 +1,26 @@
+<script>
+    let numeroInicial = prompt("Informe o número inicial:");
+let numeroFinal = prompt("Informe o número final:");
+
+numeroInicial = Number(numeroInicial);
+numeroFinal = Number(numeroFinal);
+
+if (numeroInicial >= numeroFinal) {
+    document.write("Erro: O número inicial deve ser menor que o número final.");
+} else {
+    document.write("Números ímpares: <br>");
+    for (let i = numeroInicial + 1; i < numeroFinal; i++) {
+        if (i % 2 !== 0) {
+            document.write(i + "<br>");
+        }
+    }
+
+    document.write("<br>Números pares: <br>");
+    for (let i = numeroInicial + 1; i < numeroFinal; i++) {
+        if (i % 2 === 0) {
+            document.write(i + "<br>");
+        }
+    }
+}
+
+</script>

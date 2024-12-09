@@ -1,0 +1,37 @@
+<script>
+let candidato1 = prompt("Informe o nome do primeiro candidato:");
+let candidato2 = prompt("Informe o nome do segundo candidato:");
+let candidato3 = prompt("Informe o nome do terceiro candidato:");
+
+let totalAlunos = prompt("Informe a quantidade de alunos votantes:");
+totalAlunos = Number(totalAlunos);
+
+let votosCandidato1 = 0;
+let votosCandidato2 = 0;
+let votosCandidato3 = 0;
+
+for (let i = 1; i <= totalAlunos; i++) {
+    let voto = prompt(`Aluno ${i}, vote: 1 para ${candidato1}, 2 para ${candidato2}, 3 para ${candidato3}`);
+    voto = Number(voto);
+
+    if (voto === 1) {
+        votosCandidato1++;
+    } else if (voto === 2) {
+        votosCandidato2++;
+    } else if (voto === 3) {
+        votosCandidato3++;
+    } else {
+        alert("Voto inválido. Por favor, digite 1, 2 ou 3.");
+        i--; 
+    }
+}
+
+let porcentagemCandidato1 = (votosCandidato1 / totalAlunos) * 100;
+let porcentagemCandidato2 = (votosCandidato2 / totalAlunos) * 100;
+let porcentagemCandidato3 = (votosCandidato3 / totalAlunos) * 100;
+
+document.write(`${candidato1}: ${votosCandidato1} votos (${porcentagemCandidato1.toFixed(2)}%)<br>`);
+document.write(`${candidato2}: ${votosCandidato2} votos (${porcentagemCandidato2.toFixed(2)}%)<br>`);
+document.write(`${candidato3}: ${votosCandidato3} votos (${porcentagemCandidato3.toFixed(2)}%)<br>`);
+
+</script>

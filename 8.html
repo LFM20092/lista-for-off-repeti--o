@@ -1,0 +1,13 @@
+<script>
+    let soma = 0;
+
+    for (let i = 1; i <= 5; i++) {
+        let numero = prompt(`Informe o ${i}º número:`);
+        numero = Number(numero);
+        soma += numero;
+    }
+
+    let media = soma / 5;
+    document.write(`A soma dos números é: ${soma}<br>`);
+    document.write(`A média dos números é: ${media}`);
+</script>

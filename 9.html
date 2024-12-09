@@ -1,0 +1,10 @@
+<script>
+let populacao = 50000;
+let taxaCrescimento = 0.015;
+
+let populacao5Anos = populacao * Math.pow(1 + taxaCrescimento, 5);
+let populacao10Anos = populacao * Math.pow(1 + taxaCrescimento, 10);
+
+document.write(`População prevista para 5 anos: ${populacao5Anos.toFixed(0)} habitantes<br>`);
+document.write(`População prevista para 10 anos: ${populacao10Anos.toFixed(0)} habitantes`);
+</script>

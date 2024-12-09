@@ -1,0 +1,23 @@
+<script>
+    let numero = prompt("Informe um número:");
+numero = Number(numero);
+
+let ehPrimo = true;
+
+if (numero <= 1) {
+    ehPrimo = false;
+} else {
+    for (let i = 2; i < numero; i++) {
+        if (numero % i === 0) {
+            ehPrimo = false;
+            break;
+        }
+    }
+}
+
+if (ehPrimo) {
+    document.write(`${numero} é um número primo.`);
+} else {
+    document.write(`${numero} não é um número primo.`);
+}
+</script>

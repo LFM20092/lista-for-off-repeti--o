@@ -1,0 +1,10 @@
+<script>
+    let populacao = 80000;
+let ano = 0;
+
+for (ano = 1; populacao < 200000; ano++) {
+    populacao += populacao * 0.03;
+}
+
+document.write(`Serão necessários ${ano} anos para que a população atinja 200.000 habitantes.`);
+</script>

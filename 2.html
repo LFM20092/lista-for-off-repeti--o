@@ -1,0 +1,14 @@
+<script>
+    let qtdNotas = prompt("Quantas notas o aluno obteve?");
+qtdNotas = Number(qtdNotas);
+let soma = 0;
+
+for (let i = 1; i <= qtdNotas; i++) {
+    let nota = prompt(`Informe a nota ${i}:`);
+    nota = Number(nota);
+    soma += nota;
+}
+
+let media = soma / qtdNotas;
+document.write(`A média das notas é: ${media.toFixed(2)}`);
+</script>

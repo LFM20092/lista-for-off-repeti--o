@@ -1,0 +1,16 @@
+<script>
+let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+let letrasMin = [];
+for (let i = 0; i < listaDeLetras.length; i++) {
+    letrasMin.push(listaDeLetras[i].toLowerCase());
+}
+let repetidas = [];
+for (let i = 0; i < letrasMin.length; i++) {
+    if (letrasMin.indexOf(letrasMin[i]) !== i && !repetidas.includes(letrasMin[i])) {
+        repetidas.push(letrasMin[i]);
+    }
+}
+repetidas.sort();
+document.write(repetidas.join(", "));
+
+</script>

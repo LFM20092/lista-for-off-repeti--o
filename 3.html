@@ -1,0 +1,15 @@
+<script>
+    let maiorNumero = -Infinity;
+
+for (let i = 1; i <= 5; i++) {
+    let numero = prompt(`Informe o ${i}º número:`);
+    numero = Number(numero);
+    
+    if (numero > maiorNumero) {
+        maiorNumero = numero;
+    }
+}
+
+document.write(`O maior número informado foi: ${maiorNumero}`);
+
+</script>
